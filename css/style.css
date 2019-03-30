@@ -1,8 +1,9 @@
 body{
     
 };
-#emplDMgmt{
-    
+#emplDataH{
+    background-color: black; 
+    color: white;
 };
 #addEmpl{
 float: left;

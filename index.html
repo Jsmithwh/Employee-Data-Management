@@ -8,6 +8,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
+   <link rel="stylesheet" href="/css/style.css" >
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
@@ -16,12 +18,12 @@
    <div class="container">
 
       <!-- Jumbotron for Title -->
-      <div class="card" style="background-color: black ; color: white;">
-         <h1 class="text-center">
-            <strong>
-               <i class="fa fa-newspaper-o"></i>Employee Data Management</strong>
+     <div class="card"></div>
+      <nav id="emplDataH">
+        <h1 class="text-center">
+            <strong> <i class="fa fa-newspaper-o"></i>Employee Data Management<br>A Comprehensive Directory of Employee Billable Hours </br></strong>
          </h1>
-      </div>
+      </div></nav> 
 
       <table class="table">
         <thead class="thead-dark">
@@ -116,7 +118,7 @@
 
                         <!-- Here we capture the Start Year Parameter-->
                         <div class="form-group">
-                           <label for="start-year">Start Dat (MM/DD/YYYY)</label>
+                           <label for="start-year">Start Date (MM/DD/YYYY)</label>
                            <input type="text" class="form-control" id="start-year">
                         </div>
 
