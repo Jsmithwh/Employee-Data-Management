@@ -1,7 +1,7 @@
-body{
+*{
     
 };
-#emplDataH{
+.card{
     background-color: black; 
     color: white;
 };
