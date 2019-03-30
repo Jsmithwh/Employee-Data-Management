@@ -11,14 +11,68 @@
    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
    crossorigin="anonymous"></script>
 </head>
-<body>
-   <input id="message-text" type="text" />
-   <button id="send-button">Submit Message</button>
-   <div id="message-container">
-       <p>Chat Text!</p>
-   </div>
+<<div class="container">
 
-   <script src="list.js"></script>
-
-</body>
-</html>
+        <!-- Jumbotron for Title -->
+        <div class="jumbotron" style="background-color: black ; color: white;">
+          <h1 class="text-center">
+            <strong>
+              <i class="fa fa-newspaper-o"></i>Employee Data Management</strong>
+          </h1>
+        </div>
+    
+        <!-- Row for Searching New York Times -->
+        <div class="row">
+          <div class="col-sm-12">
+            <br>
+            <!-- First card is for handling the search parameters -->
+            <div class="card">
+              <div class="card-header">
+                <strong>
+                  <i class="fa fa-list-alt"></i> Add Employee</strong>
+              </div>
+              <div class="card-body">
+    
+                <!-- Here we create an HTML Form for handling the inputs-->
+                <form role="form">
+    
+                  <!-- Here we create the text box for capturing the search term-->
+                  <div class="form-group">
+                    <label for="search">Employee Name:</label>
+                    <input type="text" class="form-control" id="search-term">
+                  </div>
+    
+                  <!-- Here we capture the number of records that the user wants to retrieve  -->
+                  <div class="form-group">
+                    <label for="pwd">Role</label>
+                    <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+                      <option selected value="1">1</option>
+                      <!-- Setting the option for 5 as default -->
+                      <option value="5" selected>5</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+    
+                  <!-- Here we capture the Start Year Parameter-->
+                  <div class="form-group">
+                    <label for="start-year">Start Dat (MM/DD/YYYY)</label>
+                    <input type="text" class="form-control" id="start-year">
+                  </div>
+    
+                  <!-- Here we capture the End Year Parameter -->
+                  <div class="form-group">
+                    <label for="end-year">Monthly Rate</label>
+                    <input type="text" class="form-control" id="end-year">
+                  </div>
+    
+                  <!-- Here we have our final submit button -->
+                  <button type="submit" class="btn btn-default" id="run-search">
+                    <i class="fa fa-search"></i> Search</button>
+                  <button class="btn btn-default" id="clear-all">
+                    <i class="fa fa-trash"></i> Clear Results</button>
+    
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
