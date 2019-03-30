@@ -11,7 +11,8 @@
    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
    crossorigin="anonymous"></script>
 </head>
-<<div class="container">
+<body>
+<div class="container">
 
         <!-- Jumbotron for Title -->
         <div class="jumbotron" style="background-color: black ; color: white;">
@@ -39,13 +40,13 @@
                   <!-- Here we create the text box for capturing the search term-->
                   <div class="form-group">
                     <label for="search">Employee Name:</label>
-                    <input type="text" class="form-control" id="search-term">
+                    <input type="text" class="form-control" id="employee-name">
                   </div>
     
                   <!-- Here we capture the number of records that the user wants to retrieve  -->
                   <div class="form-group">
                     <label for="pwd">Role</label>
-                    <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+                    <select id="role" class="custom-select" aria-labelledby="dropdownMenuButton">
                       <option selected value="1">1</option>
                       <!-- Setting the option for 5 as default -->
                       <option value="5" selected>5</option>
@@ -62,7 +63,7 @@
                   <!-- Here we capture the End Year Parameter -->
                   <div class="form-group">
                     <label for="end-year">Monthly Rate</label>
-                    <input type="text" class="form-control" id="end-year">
+                    <input type="text" class="form-control" id="monthly-rate">
                   </div>
     
                   <!-- Here we have our final submit button -->
@@ -76,3 +77,4 @@
             </div>
           </div>
         </div>
+    </body>
